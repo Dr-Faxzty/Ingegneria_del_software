@@ -24,42 +24,22 @@ public class ControlFlow {
         /** Switch-case base */
         int giorno = 3;
         switch (giorno) {
-            case 1:
-                System.out.println("Lunedì");
-                break;
-            case 2:
-                System.out.println("Martedì");
-                break;
-            case 3:
-                System.out.println("Mercoledì");
-                break;
-            case 4:
-                System.out.println("Giovedì");
-                break;
-            case 5:
-                System.out.println("Venerdì");
-                break;
-            case 6:
-                System.out.println("Sabato");
-                break;
-            case 7:
-                System.out.println("Domenica");
-                break;
-            default:
-                System.out.println("Giorno non valido");
+            case 1 -> System.out.println("Lunedì");
+            case 2 -> System.out.println("Martedì");
+            case 3 -> System.out.println("Mercoledì");
+            case 4 -> System.out.println("Giovedì");
+            case 5 -> System.out.println("Venerdì");
+            case 6 -> System.out.println("Sabato");
+            case 7 -> System.out.println("Domenica");
+            default -> System.out.println("Giorno non valido");
         }
 
         /** Switch con stringhe */
         String colore = "rosso";
         switch (colore) {
-            case "rosso":
-                System.out.println("Il colore è rosso");
-                break;
-            case "blu":
-                System.out.println("Il colore è blu");
-                break;
-            default:
-                System.out.println("Colore sconosciuto");
+            case "rosso" -> System.out.println("Il colore è rosso");
+            case "blu" -> System.out.println("Il colore è blu");
+            default -> System.out.println("Colore sconosciuto");
         }
 
         /** Uso di switch con lambda (Java 14+) */
