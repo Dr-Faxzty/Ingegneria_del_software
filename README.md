@@ -16,6 +16,15 @@ src/
 │   ├── creational/
 │   ├── structural/
 │   └── behavioral/
+├── docs/                → Documentazione (sintassi, best practices, books)
+│   ├── sintassi.md
+│   ├── best-practices.md
+│   └── books/           → Libri di riferimento in PDF/epub
+├── exercises/           → Esercizi divisi per difficoltà
+│   ├── easy/
+│   ├── medium/
+│   └── hard/
+├── projects/            → Mini-progetti e applicazioni complete
 ```
 
 ---
@@ -36,9 +45,25 @@ Operazioni di lettura/scrittura da console e da file (testuali e binari), con `S
 
 ### 🧠 `design-patterns/`
 Esempi pratici di Design Patterns suddivisi in:
-- **Creational**: Singleton
-- **Structural**: Null Object
-- **Behavioral**: Iterator
+- **Creational**: Singleton, Factory Method, Abstract Factory, Prototype
+- **Structural**: Null Object, Adapter, Facade
+- **Behavioral**: Iterator, Template, Strategy, State
+
+### 📝 `docs/`
+- `sintassi.md`: guida alla sintassi Java
+- `best-practices.md`: consigli per scrivere buon codice Java
+
+### 📖 `books/`
+Libri di riferimento per lo studio della programmazione e del linguaggio Java
+
+### 🧩 `exercises/`
+Esercizi pratici organizzati per difficoltà:
+- `easy/`: esercizi base (es. calcoli, input/output)
+- `medium/`: esercizi su array, classi, condizioni
+- `hard/`: esercizi più complessi e algoritmici
+
+### 🚀 `projects/`
+Contiene progetti Java completi e strutturati, eventualmente con uso di OOP e design patterns
 
 ---
 
