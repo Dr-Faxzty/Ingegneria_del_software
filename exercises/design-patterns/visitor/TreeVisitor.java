@@ -1,4 +1,4 @@
-public interface TreeVisitor {
-    void visit(BinaryTree tree);
-    void visit(NullTree tree);
+public interface TreeVisitor<T> {
+    T visit(BinaryTree tree);
+    T visit(NullTree tree);
 }

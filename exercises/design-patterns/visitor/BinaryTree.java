@@ -61,5 +61,5 @@ public class BinaryTree implements IBinaryTree {
     public int key() { return this.key; }
 
     @Override
-    public void accept(TreeVisitor visitor) { visitor.visit(this); }
+    public <T> T accept(TreeVisitor<T> visitor) { return visitor.visit(this); }
 }

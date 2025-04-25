@@ -7,5 +7,5 @@ public interface IBinaryTree {
     IBinaryTree left();
     IBinaryTree right();
     int key();
-    void accept(TreeVisitor visitor);
+    <T> T accept(TreeVisitor<T> visitor);
 }

@@ -32,5 +32,5 @@ public class NullTree implements IBinaryTree {
     public int key() { throw new NoSuchElementException("Null Trees have no 'key'"); }
 
     @Override
-    public void accept(TreeVisitor visitor) { visitor.visit(this); }
+    public <T> T accept(TreeVisitor<T> visitor) { return visitor.visit(this); }
 }

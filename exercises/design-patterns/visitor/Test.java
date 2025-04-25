@@ -11,16 +11,18 @@ public class Test {
        
         System.out.println(myTree.toString());
     
-        ListCollectorVisitor visitor = new ListCollectorVisitor(TraversalOrder.PRE_ORDER);
-        myTree.accept(visitor);
-        System.out.println("PreOrder: " + visitor.getResult());
+        TraversalVisitor pre = new TraversalVisitor(TraversalOrder.PRE_ORDER);
+        TraversalVisitor in = new TraversalVisitor(TraversalOrder.IN_ORDER);
+        TraversalVisitor post = new TraversalVisitor(TraversalOrder.POST_ORDER);
 
-        visitor = new ListCollectorVisitor(TraversalOrder.IN_ORDER);
-        myTree.accept(visitor);
-        System.out.println("InOrder: " + visitor.getResult());
+        System.out.println("PreOrder: " + myTree.accept(pre));
+        System.out.println("InOrder: " + myTree.accept(in));
+        System.out.println("PostOrder: " + myTree.accept(post));
 
-        visitor = new ListCollectorVisitor(TraversalOrder.POST_ORDER);
-        myTree.accept(visitor);
-        System.out.println("PostOrder: " + visitor.getResult());
+        CountVisitor count = new CountVisitor();
+        System.out.println("Number of nodes: " + myTree.accept(count));
+
+        SumVisitor sum = new SumVisitor();
+        System.out.println("Sum of all nodes keys: " + myTree.accept(sum));
     }
 }
